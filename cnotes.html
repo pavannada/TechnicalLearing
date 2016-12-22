@@ -66,6 +66,51 @@ Language, which is now the standard reference book for C.
 In 1986, a descendant of C, called C++ was developed by Bjarne Stroustrup,
 which is in wide use today. Many modern languages such as C#, Java and Perl are
 based on C and C++. 
+									Guidelines on Structure
+When creating your programs, here's a few guidelines for getting a program that can
+be easily read and debugged by you (when you come back to it later) and others
+(who may have to change your program later).
+ A well-structured program should indent (i.e. move to the right by
+pressing the tab key once) all instructions inside eac h block (i.e. following
+an opening curly brace – {). Therefore, a block inside another block will be
+indented twice etc. This helps to show which instructions will be executed,
+and also helps to line up opening and closing curly braces.
+
+It is often helpful to separate stages of a program by putting an extra blank
+line (and maybe a comment explaining what the next stage does) between
+each stage.
+
+Another useful technique that helps the readability inside each instruction is to
+put spaces after commas when listing parameters (i.e. data) to be given to a
+function. This helps identify where each parameter starts and
+3
+The Condensed C
+makes the program easier to read. Spaces before and after brackets,
+assignments (=) and operators (+ - * / < > == != etc.) can also help
+make things more readable – but this is up to you.
+ Start a program with a /* comment */ that explains the purpose of the
+program, and who wrote it. This is useful in case you ever have to work on
+somebody else's program, and you need to ask them for advice on how it
+works.
+
+If you create a new function, put a comment before it showing what data goes in, and
+what comes out, and the purpose of the function.
+ If you make a change to somebody's program, put a comment at the top
+of the program explaining this (e.g. your initials, the date you made the
+change, and a one-liner explaining what you did). Then, where you make
+the change, put a comment (maybe with your initials and date again)
+showing where the change is, and possibly explaining what it is and why it
+needed changing. Some people put comments around the old version of
+the part of the program that was changed to show what it used to be, in
+case it needs to be changed back again some time in the future.
+ If a part of your code is quite difficult to follow, or yo u wish to explain why
+you have written it the way you have, or even if you wish to say that it
+could be improved (and how) but you haven't the time to do it better yet,
+then use a comment. Those who read your program later will than you (in
+their heads, at least).
+
+The examples given in this guide are generally good examples of how to
+structure you
 												
 								</section>
 
